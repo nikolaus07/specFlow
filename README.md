@@ -4,5 +4,7 @@ c# mit specflow - einfacher Taschenrechner
 
 <img src="specflow.png" border=2>
 
-<a href="Report_2020-10-31.html">Report</a>
+<a href="Report_2020-10-31.html">Report</a> 
+
+<img src="Specflow.png" border=2>
  

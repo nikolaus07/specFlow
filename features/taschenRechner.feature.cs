@@ -90,42 +90,42 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Subtrahiere two numbers - Richtig", new string[] {
-                "mytag"}, SourceLine=14)]
+                "mytag"}, SourceLine=13)]
         public virtual void SubtrahiereTwoNumbers_Richtig()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtrahiere two numbers - Richtig", null, new string[] {
                         "mytag"});
-#line 15
+#line 14
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 16
+#line 15
  testRunner.Given("the first number is \'99\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 17
+#line 16
  testRunner.And("the second number is \'19\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
+#line 17
  testRunner.When("Subtraktion wird gestartet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 19
+#line 18
  testRunner.Then("Ergebnis der Subtraktion sollte \'80\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Subtrahiere two numbers - Falsch", new string[] {
-                "mytag"}, SourceLine=22)]
+                "mytag"}, SourceLine=20)]
         public virtual void SubtrahiereTwoNumbers_Falsch()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtrahiere two numbers - Falsch", null, new string[] {
                         "mytag"});
-#line 23
+#line 21
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 24
+#line 22
  testRunner.Given("the first number is \'99\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 25
+#line 23
  testRunner.And("the second number is \'19\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
+#line 24
  testRunner.When("Subtraktion wird gestartet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 27
+#line 25
  testRunner.Then("Ergebnis der Subtraktion sollte \'33\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

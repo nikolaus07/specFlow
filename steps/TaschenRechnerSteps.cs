@@ -19,7 +19,13 @@ namespace specf1.steps {
         public void WhenTheTwoNumbersAreAdded() {
             Rechner.getAddieren();
         }
-        
+
+        [When(@"Mulitplikation wird gestartet")]
+        public void WhenTheTwoNumbersAreMulitpiziert()
+        {
+            Rechner.getMuliplikation();
+        }
+
         [Then(@"the result should be '(.*)'")]
         public void ThenTheResultShouldBe(int p0) {
             Assert.AreEqual(p0, Rechner.Ergebnis);

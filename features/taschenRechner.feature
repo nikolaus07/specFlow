@@ -1,7 +1,5 @@
 ﻿Feature: taschenRechner
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	addieren, subtrahieren  und multiplizieren
 
 @mytag
 Scenario: Add two numbers
@@ -11,15 +9,22 @@ Scenario: Add two numbers
 	Then the result should be '120'
 
 @mytag
-Scenario: Subtrahiere two numbers - Richtig
+Scenario: Subtrahieren
 	Given the first number is '99'
 	And the second number is '19'
 	When Subtraktion wird gestartet
 	Then Ergebnis der Subtraktion sollte '80'
 
 	@mytag
-Scenario: Subtrahiere two numbers - Falsch
+Scenario: Subtrahieren - Falsch
 	Given the first number is '99'
 	And the second number is '19'
 	When Subtraktion wird gestartet
 	Then Ergebnis der Subtraktion sollte '33'
+
+	@HighPrioTest
+Scenario: Multiplizieren
+	Given the first number is '33'
+	And the second number is '3'
+	When Mulitplikation wird gestartet
+	Then Ergebnis der Subtraktion sollte '99'

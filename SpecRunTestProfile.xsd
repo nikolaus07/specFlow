@@ -254,12 +254,8 @@
   <xs:simpleType name="FrameworkVersion">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Default" />
-      <xs:enumeration value="Net40" />
-      <xs:enumeration value="Net45" />
-      <xs:enumeration value="Netcoreapp2.0" />
+      <xs:enumeration value="net461" />
       <xs:enumeration value="Netcoreapp2.1" />
-      <xs:enumeration value="Netcoreapp2.2" />
-      <xs:enumeration value="Netcoreapp3.0" />
       <xs:enumeration value="Netcoreapp3.1" />
     </xs:restriction>
   </xs:simpleType>

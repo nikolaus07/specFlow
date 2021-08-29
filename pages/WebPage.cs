@@ -10,23 +10,23 @@ namespace specf1.pages
     [Binding]
     public class WebPage
     {
-        private static Page page;
+        private static Page homePage;
         private const string pageAdresse = @"http://samples.gwtproject.org/samples/Showcase/Showcase.html";
 
         public WebPage()
         {
-            page = (TestRun.browser.PagesAsync().Result)[0];
-            page.GoToAsync(pageAdresse).Wait();
+            homePage = (TestRun.browser.PagesAsync().Result)[0];
+            homePage.GoToAsync(pageAdresse).Wait();
         }
 
         public Page getPage()
         {
-            return page;
+            return homePage;
         }
 
         private static async Task<ElementHandle[]> CallElementAsyn(string element)
         {
-            return await page.QuerySelectorAllAsync(element);
+            return await homePage.QuerySelectorAllAsync(element);
         }
 
         public async Task<ElementHandle[]> WarteForSelector(string selector, string expInnerText, int timeOut)
@@ -34,7 +34,7 @@ namespace specf1.pages
             bool gefunden = true;
             ElementHandle[] elements = await CallElementAsyn(selector);
             System.DateTime startTime = System.DateTime.Now;
-            System.TimeSpan timeOutSpan = new System.TimeSpan(0, 0, 0, timeOut);
+            System.TimeSpan timeOutSpan = new System.TimeSpan(0, 0, 0, timeOut); // 15 sekunden
 
             while (gefunden)
             {
@@ -55,7 +55,6 @@ namespace specf1.pages
                         Thread.Sleep(200);
                         elements = await CallElementAsyn(selector);
                     }
-
                 }
             }
             return elements;

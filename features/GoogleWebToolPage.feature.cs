@@ -136,6 +136,26 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
+        [TechTalk.SpecRun.ScenarioAttribute("click button", new string[] {
+                "googleTag",
+                "webBrowser"}, SourceLine=25)]
+        public virtual void ClickButton()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("click button", null, new string[] {
+                        "googleTag",
+                        "webBrowser"});
+#line 26
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 27
+    testRunner.When("navigate to page: \'http://samples.gwtproject.org/samples/Showcase/Showcase.html#!" +
+                    "CwBasicButton\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 28
+    testRunner.Then("click-button mit Text: \'Normal Button\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
         [TechTalk.SpecRun.TestRunCleanup()]
         public virtual void TestRunCleanup()
         {

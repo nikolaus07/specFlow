@@ -21,3 +21,8 @@ Scenario: Add and delete rows
 Scenario: Test Radio-btn
     When navigate to page: 'http://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwRadioButton'
     Then Set favorit-sport RB to: "Hockey"
+
+@googleTag   @webBrowser
+Scenario: click button
+    When navigate to page: 'http://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwBasicButton'
+    Then click-button mit Text: 'Normal Button'

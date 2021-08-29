@@ -9,8 +9,8 @@ namespace specf1.SpecFlow
     public static class TestRun
     {
         public static Browser browser;
-        public static WebPage webPage;
-        public static Page web_page { get; private set; }
+        public static WebPage webPage { get; set; }
+        public static Page Page { get; private set; }
 
         [BeforeScenario("webBrowser")]
         public static async Task BeforeScenarioTask()
@@ -31,7 +31,7 @@ namespace specf1.SpecFlow
             browser = browserTask.Result;
 
             webPage = new WebPage();
-            web_page = webPage.getPage();
+            Page = webPage.getPage();
         }
 
         [AfterScenario("webBrowser")]

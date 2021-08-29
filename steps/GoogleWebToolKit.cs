@@ -43,13 +43,29 @@ namespace specf1.steps {
         }
 
         [Then(@"Flex Table: ""(.*)""")]
-        public async Task ThenFlexTable(string day)
+        public async Task ThenFlexTable(string befehl)
         {
-            string xPath = "//input [@id='gwt-debug-cwCheckBox-Tuesday-input']";
-          
+            string xPath = "";
+            if (befehl.Contains("Add a row"))
+            {
+               xPath = "//button[contains(text(),'Add a row')]";
+            } else
+            {
+                xPath = "//button[contains(text(),'Remove a row')]";
+            }
             ElementHandle element = await page.WaitForXPathAsync(xPath);
             await element.ClickAsync();
+            Thread.Sleep(1000);
+        }
 
+
+        [Then(@"Set favorit-sport RB to: ""(.*)""")]
+        public async Task ThenSetFavorit_SportRBTo(string faforitSport)
+        {
+            string xPath =  "//input [@id='gwt-debug-cwRadioButton-sport-Hockey-input']";
+            ElementHandle element = await page.WaitForXPathAsync(xPath);
+            await element.ClickAsync();
+            Thread.Sleep(1000);
         }
 
 

@@ -34,5 +34,11 @@ namespace specf1.SpecFlow
             web_page = webPage.getPage();
         }
 
+        [AfterScenario("webBrowser")]
+        public static async Task AfterScenario()
+        {
+            browser.DisposeAsync(); // close Browser
+        }
+
     }
 }

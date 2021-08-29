@@ -66,38 +66,25 @@ namespace specf1.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Teste Radio-Button", new string[] {
-                "mytag"}, SourceLine=4)]
-        public virtual void TesteRadio_Button()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Teste Radio-Button", null, new string[] {
-                        "mytag"});
-#line 5
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
         [TechTalk.SpecRun.ScenarioAttribute("Click Checkboxes", new string[] {
                 "googleTag",
-                "webBrowser"}, SourceLine=6)]
+                "webBrowser"}, SourceLine=4)]
         public virtual void ClickCheckboxes()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click Checkboxes", null, new string[] {
                         "googleTag",
                         "webBrowser"});
-#line 7
+#line 5
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 8
+#line 6
     testRunner.When("navigate to page: \'http://samples.gwtproject.org/samples/Showcase/Showcase.html#!" +
                     "CwCheckBox\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
+#line 7
     testRunner.Then("zeitschleife", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 10
+#line 8
     testRunner.Then("Set Checkbox on day: \'Tuesday\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 11
+#line 9
     testRunner.And("Set Checkbox on day: \'Friday\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -105,25 +92,25 @@ this.ScenarioInitialize(scenarioInfo);
         
         [TechTalk.SpecRun.ScenarioAttribute("Add and delete rows", new string[] {
                 "googleTag",
-                "webBrowser"}, SourceLine=14)]
+                "webBrowser"}, SourceLine=12)]
         public virtual void AddAndDeleteRows()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add and delete rows", null, new string[] {
                         "googleTag",
                         "webBrowser"});
-#line 15
+#line 13
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 16
+#line 14
     testRunner.When("navigate to page: \'http://samples.gwtproject.org/samples/Showcase/Showcase.html#!" +
                     "CwFlexTable\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 15
+    testRunner.Then("Flex Table: \"Add a row\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 16
+    testRunner.Then("Flex Table: \"Add a row\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 17
-    testRunner.Then("Flex Table: \"Add a row\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 18
-    testRunner.Then("Flex Table: \"Add a row\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 19
     testRunner.Then("Flex Table: \"Remove a row\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 20
+#line 18
     testRunner.Then("Flex Table: \"Remove a row\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -131,19 +118,19 @@ this.ScenarioInitialize(scenarioInfo);
         
         [TechTalk.SpecRun.ScenarioAttribute("Test Radio-btn", new string[] {
                 "googleTag",
-                "webBrowser"}, SourceLine=22)]
+                "webBrowser"}, SourceLine=20)]
         public virtual void TestRadio_Btn()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Radio-btn", null, new string[] {
                         "googleTag",
                         "webBrowser"});
-#line 23
+#line 21
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 24
+#line 22
     testRunner.When("navigate to page: \'http://samples.gwtproject.org/samples/Showcase/Showcase.html#!" +
                     "CwRadioButton\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
+#line 23
     testRunner.Then("Set favorit-sport RB to: \"Hockey\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

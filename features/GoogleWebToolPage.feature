@@ -1,8 +1,6 @@
 ﻿Feature: GoogleWebToolPage
 	rufe Showcase Google Web Toolkit auf und teste Radio-Button...
 
-@mytag
-Scenario: Teste Radio-Button
 @googleTag   @webBrowser
 Scenario: Click Checkboxes
     When navigate to page: 'http://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwCheckBox'
